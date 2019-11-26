@@ -39,7 +39,7 @@ namespace project
             }
         }
 
-        public bool IsTaken(Panel panel)
+        public static bool IsTaken(Panel panel)
         {
               if (panel.Status(panel.type) == "Empty")
                 {

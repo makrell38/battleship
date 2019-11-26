@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 namespace project
 {
-    public class Board
+    public class Board //: Panel
     {
         public Panel [,] Panels = new Panel[10,10];
         public Board()
-	    {
-            //Panel[,] Panels = new Panel[10, 10];
-            //Panels = new List<Panel>();
+        {
+
             for (int k = 0; k<10; k++)
             {
                 for (int i = 0; i<10; i++)

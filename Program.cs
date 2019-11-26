@@ -8,13 +8,22 @@ namespace project
 {
     class Program
     {
-        //public Board Board1 { get; set; }
+        
         static void Main(string[] args)
-        {
-            Board Board1 = new Board();
-            Board Board2 = new Board();
-            Board1.PrintBoard();
-            Board2.PrintBoard();
+        {   
+            //Board Board1 = new Board();
+            //Board Board2 = new Board();
+            //Board1.PrintBoard();
+            //Board2.PrintBoard();
+            Player Player1 = new Player("Player1");
+            Player Computer = new Player("Computer");
+            foreach (Ship x in Computer.Ships)
+            {
+                Computer.PlaceShips(x, "Computer");
+                Computer.PlayerBoard.PrintBoard();
+            }
+            
+
         }
     }
 }
